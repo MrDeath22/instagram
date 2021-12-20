@@ -59,9 +59,11 @@ addCommentForm.addEventListener('submit', (e) => {
       let comment = document.createElement('span');
       comment.classList.add('posts__desc-txt');
       comment.appendChild(document.createTextNode(addCommentInp.value));
-      postsDiv.innerHTML += comment;
+      postsDiv.appendChild(comment);
       console.log(comment);
    }
+
+   addCommentInp.value = '';
 })
 
 addCommentInp.addEventListener('keyup', () => {

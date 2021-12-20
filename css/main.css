@@ -772,6 +772,7 @@ img {
 }
 
 .posts__desc-txt {
+  display: block;
   font-size: 15px;
   margin-bottom: 12px;
 }
