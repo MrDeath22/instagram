@@ -43,24 +43,6 @@ ul, ol {
 i {
    position: relative;
 }
- 
-.fulled-container {
-   width: 100%;
-   padding: 0 20px;
-}
- 
-.container {
-   max-width: 1240px;
-   width: 100%;
-   padding: 0 20px;
-   margin: 0 auto;
-}
-
-.small-container {
-   max-width: 90%;
-   padding: 0 20px;
-   margin: 0 auto;
-}
 
 .center-absolute {
    position: absolute;

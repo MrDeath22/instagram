@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Short icon -->
+   <link rel="shortcut icon" href="https://agencyanalytics.com/assets/integration/icon/instagram.svg" type="image/x-icon">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <!-- CSS Files -->
+   <link rel="stylesheet" href="./css/flex-box.css">
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/main.min.css">
+   <title> Instagram </title>
+</head>
+<body>
+
+   <header id="header" class="header">
+
+      <div class="header__container container">
+         <div class="header__inner row between align-center">
+            <a class="header__logo" href="index.html">
+               <img src="./img/logo.svg" alt="logo">
+            </a>
+            <form class="header__form" action="#">
+               <label>
+                  <i class="far fa-search"></i>
+                  <input class="header__form-inp" type="search" placeholder="Search">
+                  <i class="fas fa-times-circle"></i>
+               </label>
+            </form>
+            <nav class="header__nav nav">
+               <ul class="nav__list row">
+                  <li class="nav__item">
+                     <a class="nav__item-link" href="index.html">
+                        <img src="./img/home.svg" alt="home">
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <a class="nav__item-link" href="#">
+                        <img src="./img/direct.svg" alt="direct">
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <button class="nav__item-link">
+                        <img src="./img/plus.svg" alt="plus">
+                     </button>
+                  </li><li class="nav__item">
+                     <a class="nav__item-link" href="#">
+                        <img src="./img/like.svg" alt="likes">
+                     </a>
+                  </li>
+                  <li class="nav__item">
+                     <button class="nav__item-link">
+                        <img src="./img/navigation.svg" alt="navigate">
+                     </button>
+                  </li>
+                  <li class="nav__item">
+                     <a class="nav__item-link" href="#">
+                        <img src="./img/user.svg" alt="user">
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+
+   </header>
+
+   <section id="posts">
+      <div class="posts__container container">
+         <div class="posts__inner">
+            <div class="posts__nav nav">
+               <ul class="posts__list nav__list la row center align-center">
+                  <li class="nav__item">
+                     <button class="nav__item-btn nav__btn1 active">
+                        <i class="fal fa-th"></i>
+                        POSTS
+                     </button>
+                  </li>
+                  <li class="nav__item">
+                     <button class="nav__item-btn nav__btn2">
+                        <i class="fal fa-play-circle"></i>
+                        VIDEOS
+                     </button>
+                  </li>
+                  <li class="nav__item">
+                     <button class="nav__item-btn nav__btn3">
+                        <i class="fal fa-user-circle"></i>
+                        IMAGES
+                     </button>
+                  </li>
+               </ul>
+            </div>
+            <div class="posts__wrapper post row between align-center">
+               <i class="fal fa-times" style="display: none;"></i>
+               <template id="post__temp">
+                  <div class="post__temp-div row between">
+                     <img class="post__temp-img" src="" alt="post" width="300">
+                  </div>
+               </template>
+               <template id="post__modal-temp" class="modal-temp">
+                  <div class="modal-temp__div row center">
+                     <div class="relative-p">
+                        <i class="fas fa-heart img-heart"></i>
+                        <img class="modal-temp__div-img posts__body-img" src="./img/post2.jpg" alt="post">
+                     </div>
+                     <div class="modal-temp__comment comment">
+                        <div class="posts__header row between align-center">
+                           <div class="row">
+                              <a class="posts__history" href="#">
+                                 <img src="./img/user2.png" alt="user1">
+                                 terrylucas
+                              </a>
+                              <button class="posts__flw">Follow</button>
+                           </div>
+                           <button class="posts__btn">
+                              <i class="fal fa-ellipsis-h"></i>
+                           </button>
+                        </div>
+                        <div class="comment__header">
+
+                        </div>
+                        <div class="comment__body">
+                           <div class="posts">
+                              <div class="posts__likes likes row between align-center">
+                                 <div class="row">
+                                    <button class="likes__like">
+                                       <img class="likes-img" src="./img/like.svg" alt="likes">
+                                       <i class="fas fa-heart like-heart"></i>
+                                    </button>
+                                    <button class="likes__like">
+                                       <img src="./img/comment.svg" alt="comment">
+                                    </button>
+                                    <button class="likes__like">
+                                       <img src="./img/forward.svg" alt="forward">
+                                    </button>
+                                 </div>
+                                 <button class="likes__like">
+                                    <img src="./img/save.svg" alt="save">
+                                 </button>
+                              </div>
+                              <div class="posts__desc">
+                                 <span class="posts__desc-likes">1.069 likes</span>
+                                 <p class="posts__desc-info">
+                                    <a class="posts__desc-user" href="#">terrylucas</a>
+                                    Imp
+                                 </p>
+                                 <button class="posts__desc-comments">View all 101 comments</button>
+                                 <time class="posts__desc-time" datetime="22-02-2022">1 hour ago</time>
+                              </div>
+                              <div class="posts__addcomment addcomment">
+                                 <form class="addcomment__form row between align-center" action="action-php.com">
+                                    <label class="row align-center">
+                                       <button class="addcomment__smayl"><img src="./img/smayl.svg" alt="smayl"></button>
+                                       <input class="addcomment__inp" type="text" placeholder="Add a comment...">
+                                    </label>
+                                    <button class="addcomment__btn">Post</button>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <span class="modal-temp__bg"></span>
+               </template>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <script src="./js/obj.js"></script>
+   <script src="./js/user.js"></script>
+   <script src="./js/main.js"></script>
+   
+</body>
+</html>

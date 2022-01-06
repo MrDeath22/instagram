@@ -37,31 +37,6 @@
 
    .posts {
 
-      &__header {
-         padding: 15px;
-      }
-
-      &__history {
-         width: 40px;
-         height: 40px;
-         display: flex;
-         align-items: center;
-         font-weight: 600;
-         font-size: 14px;
-         color: #111;
-
-         img {
-            margin-right: 15px;
-            border: 2px solid transparent;
-            background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%) border-box;
-            border-radius: 50%;
-         }
-      }
-
-      &__btn {
-         font-size: 28px;
-      }
-
       &__body {
          position: relative;
 
@@ -74,87 +49,9 @@
             top: 40%;
             left: 50%;
             display: none;
-            font-size: 200px;
+            font-size: 160px;
             color: #eeeeee9e;
-         }
-
-         .like-heart {
-            font-size: 24px;
-            display: none;
-            color: red;
-         }
-
-         .likes {
-            padding: 15px 20px;
-
-            &__like:not(:last-child) {
-               margin-right: 15px;
-
-               &:hover {
-                  opacity: 0.6;
-               }
-            }
-         }
-      }
-
-      &__desc {
-         padding: 0 20px;
-
-         &-likes {
-            display: block;
-            font-weight: 500;
-            margin-bottom: 6px;
-         }
-
-         &-info {
-            font-size: 15px;
-            margin-bottom: 6px;
-         }
-
-         &-user  {
-            font-weight: 500;
-            color: #111;
-         }
-
-         &-comments,
-         &-time {
-            display: block;
-            font-size: 15px;
-            color: #8E8E8E;
-            margin-bottom: 6px;
-         }
-
-         &-time {
-            font-size: 14px;
-            margin-bottom: 14px;
-         }
-      }
-
-      .addcomment {
-         padding: 12px 20px;
-         border-top: 1px solid #DBDBDB;
-
-         &__smayl {
-            position: relative;
-            top: 2px;
-            margin-right: 20px;
-         }
-
-         &__inp {
-            height: 30px;
-            width: 500px;
-            border: none;
-            outline: none;
-
-            &::placeholder {
-               font-size: 14px;
-            }
-         }
-
-         &__btn {
-            font-weight: 500;
-            color: #0095f6;
-            opacity: 0.5;
+            z-index: 100;
          }
       }
    }
@@ -260,6 +157,111 @@
          }
       }
    }
+}
+
+.posts__header {
+   padding: 15px;
+   background: #fff;
+}
+
+.posts__history {
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   font-weight: 600;
+   font-size: 14px;
+   color: #111;
+
+   img {
+      margin-right: 15px;
+      border: 2px solid transparent;
+      background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%) border-box;
+      border-radius: 50%;
+   }
+}
+
+.like-heart {
+   font-size: 24px;
+   display: none;
+   color: red;
+}
+
+.likes {
+   padding: 15px 20px;
+
+   &__like:not(:last-child) {
+      margin-right: 15px;
+
+      &:hover {
+         opacity: 0.6;
+      }
+   }
+}
+
+
+.posts__desc {
+   padding: 0 20px;
+
+   &-likes {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 6px;
+   }
+
+   &-info {
+      font-size: 15px;
+      margin-bottom: 6px;
+   }
+
+   &-user  {
+      font-weight: 500;
+      color: #111;
+   }
+
+   &-comments,
+   &-time {
+      display: block;
+      font-size: 15px;
+      color: #8E8E8E;
+      margin-bottom: 6px;
+   }
+
+   &-time {
+      font-size: 14px;
+      margin-bottom: 14px;
+   }
+}
+
+.addcomment {
+   padding: 12px 20px;
+   border-top: 1px solid #DBDBDB;
+
+   &__smayl {
+      position: relative;
+      top: 2px;
+      margin-right: 20px;
+   }
+
+   &__inp {
+      height: 30px;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+         font-size: 14px;
+      }
+   }
+
+   &__btn {
+      font-weight: 500;
+      color: #0095f6;
+      opacity: 0.5;
+   }
+}
+
+.posts__btn {
+   font-size: 28px;
 }
 
 .posts__desc-txt {

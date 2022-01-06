@@ -24,7 +24,6 @@ let redHeart = document.querySelector('.like-heart');
 let imgHeart = document.querySelector('.likes-img');
 
 imgHeart.addEventListener('click', () => {
-   console.log(1);
    redHeart.style.display = 'block';
    imgHeart.style.display = 'none';
 })

@@ -1,0 +1,118 @@
+#posts {
+   padding: 40px 0;
+
+   .nav {
+      border-top: 1px solid #DBDBDB;
+
+      &__item {
+         position: relative;
+         top: -1px;
+         margin: 0 30px;
+
+         &-btn {
+            font-weight: 500;
+            font-size: 13px;
+            padding: 20px 0;
+            border-top: 1px solid transparent;
+            color: #8e8e8e;
+
+            i {
+               right: 2px;
+               font-size: 12px;
+            }
+         }
+
+         .active {
+            border-top: 1px solid #000;
+            color: #272727;
+         }
+      }
+   }
+
+   .post {
+      &__item {
+         padding-bottom: 25px;
+      }
+
+      &__temp-img {
+         margin-bottom: 25px;
+         cursor: pointer;
+      }
+
+      .modal-temp {
+
+         &__div {
+            @include center-absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            z-index: 20;
+
+            .img-heart {
+               @include center-absolute;
+               top: 50%;
+               left: 50%;
+               display: none;
+               font-size: 160px;
+               color: #eeeeee9e;
+               z-index: 100;
+            }
+
+            &-img {
+               max-width: 800px;
+               max-height: 700px;
+               min-width: 600px;
+               min-height: 600px;
+            }
+            
+            .posts__header {
+               width: 400px;
+               border-bottom: 1px solid #DBDBDB;
+            }
+
+            .posts__flw {
+               font-weight: 500;
+               font-size: 14px;
+               margin-left: 90px;
+               color: #0095f6;
+            }
+
+            .comment {
+               height: 1;
+               display: flex;
+               flex-flow: column;
+               justify-content: space-between;
+               background: #fff;
+
+               &__body {
+                  text-align: start;
+               }
+
+               .likes {
+                  border-top: 1px solid #dbdbdb;
+               }
+            }
+         }
+
+         &__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000ce;
+            z-index: 10;
+         }
+      }
+   }
+}
+
+.fa-times {
+   @include center-absolute;
+   top: 4%;
+   right: 1.5%;
+   font-size: 30px;
+   color: #fff;
+   cursor: pointer;
+   z-index: 30;
+}

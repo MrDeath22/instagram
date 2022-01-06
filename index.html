@@ -57,7 +57,7 @@
                      </button>
                   </li>
                   <li class="nav__item">
-                     <a class="nav__item-link" href="#">
+                     <a class="nav__item-link" href="user.html">
                         <img src="./img/user.svg" alt="user">
                      </a>
                   </li>
@@ -125,40 +125,42 @@
                      <div class="posts__body">
                         <i class="fas fa-heart img-heart"></i>
                         <img class="posts__body-img" src="./img/user2.png" alt="user1">
-                        <div class="posts__likes likes row between align-center">
-                           <div class="row">
+                        <div>
+                           <div class="posts__likes likes row between align-center">
+                              <div class="row">
+                                 <button class="likes__like">
+                                    <img class="likes-img" src="./img/like.svg" alt="likes">
+                                    <i class="fas fa-heart like-heart"></i>
+                                 </button>
+                                 <button class="likes__like">
+                                    <img src="./img/comment.svg" alt="comment">
+                                 </button>
+                                 <button class="likes__like">
+                                    <img src="./img/forward.svg" alt="forward">
+                                 </button>
+                              </div>
                               <button class="likes__like">
-                                 <img class="likes-img" src="./img/like.svg" alt="likes">
-                                 <i class="fas fa-heart like-heart"></i>
-                              </button>
-                              <button class="likes__like">
-                                 <img src="./img/comment.svg" alt="comment">
-                              </button>
-                              <button class="likes__like">
-                                 <img src="./img/forward.svg" alt="forward">
+                                 <img src="./img/save.svg" alt="save">
                               </button>
                            </div>
-                           <button class="likes__like">
-                              <img src="./img/save.svg" alt="save">
-                           </button>
-                        </div>
-                        <div class="posts__desc">
-                           <span class="posts__desc-likes">1.069 likes</span>
-                           <p class="posts__desc-info">
-                              <a class="posts__desc-user" href="#">terrylucas</a>
-                              Imperdiet in sit rhoncus, eleifend tellus augue lectus potenti pellentesque
-                           </p>
-                           <button class="posts__desc-comments">View all 101 comments</button>
-                           <time class="posts__desc-time" datetime="22-02-2022">1 hour ago</time>
-                        </div>
-                        <div class="posts__addcomment addcomment">
-                           <form class="addcomment__form row between align-center" action="action-php.com">
-                              <label class="row align-center">
-                                 <button class="addcomment__smayl"><img src="./img/smayl.svg" alt="smayl"></button>
-                                 <input class="addcomment__inp" type="text" placeholder="Add a comment...">
-                              </label>
-                              <button class="addcomment__btn">Post</button>
-                           </form>
+                           <div class="posts__desc">
+                              <span class="posts__desc-likes">1.069 likes</span>
+                              <p class="posts__desc-info">
+                                 <a class="posts__desc-user" href="#">terrylucas</a>
+                                 Imperdiet in sit rhoncus, eleifend tellus augue lectus potenti pellentesque
+                              </p>
+                              <button class="posts__desc-comments">View all 101 comments</button>
+                              <time class="posts__desc-time" datetime="22-02-2022">1 hour ago</time>
+                           </div>
+                           <div class="posts__addcomment addcomment">
+                              <form class="addcomment__form row between align-center" action="action-php.com">
+                                 <label class="row align-center">
+                                    <button class="addcomment__smayl"><img src="./img/smayl.svg" alt="smayl"></button>
+                                    <input class="addcomment__inp" type="text" placeholder="Add a comment...">
+                                 </label>
+                                 <button class="addcomment__btn">Post</button>
+                              </form>
+                           </div>
                         </div>
                      </div>
                   </div>
